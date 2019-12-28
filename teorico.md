@@ -7,7 +7,7 @@ E o que você acha interessante não utilizar?
 Justifique levando em consideração boas práticas, estilização e formato de arquivos.
 
 ```js
-// Se a resolução da imagem estiver baixa, utilizo o Verexfi para remover apenas informações de texto dispensáveis para web (data, hora, etc.). Para imagens em alta resolução o Tiny PNG faz um bom trabalho de compressão. Se for preciso adicionar detalhes na imagem (logo, gradiente, etc.) aí imgIX domina. Não acho muito interessante utilizar media queries para tratar imagem pois elas exigem a criação de várias versões de uma mesma imagem e consequentemente gasta-se mais tempo na manutenção do código.
+/* Se a resolução da imagem estiver baixa, utilizo o Verexfi para remover apenas informações de texto dispensáveis para web (data, hora, etc.). Para imagens em alta resolução o Tiny PNG faz um bom trabalho de compressão. Se for preciso adicionar detalhes na imagem (logo, gradiente, etc.) aí imgIX domina. Não acho muito interessante utilizar media queries para tratar imagem pois elas exigem a criação de várias versões de uma mesma imagem e consequentemente gasta-se mais tempo na manutenção do código.*/
 ```
 
 
@@ -18,7 +18,7 @@ Explique um pouco através de exemplos;
 
 
 ```js
-// Sim. A W3C padroniza a estilização de páginas web. Inclusive disponibilizam uma ferramenta online para validação de folhas de estilo (http://jigsaw.w3.org/css-validator) que aponta e explica, se houver, problemas de estilo.
+/* Sim. A W3C padroniza a estilização de páginas web. Inclusive disponibilizam uma ferramenta online para validação de folhas de estilo (http://jigsaw.w3.org/css-validator) que aponta e explica, se houver, problemas de estilo.*/
 ```
 
 
@@ -29,7 +29,7 @@ Tem algum exemplo que você não acha interessante?
 
 
 ```js
-// Eu começo pensando na versão mobile para depois expandir para a Desktop. Evito utilizar larguras fixas e aproveito o poder das Media Queries. Acho uma fria utilizar User Agent para identificacão do dispositivo já que versões mobile de navegadores web podem ser identificados de forma errada.
+/* Eu começo pensando na versão mobile para depois expandir para a Desktop. Evito utilizar larguras fixas e aproveito o poder das Media Queries. Acho uma fria utilizar User Agent para identificacão do dispositivo já que versões mobile de navegadores web podem ser identificados de forma errada.*/
 ```
 
 
@@ -198,7 +198,7 @@ Tem algum exemplo que você não acha interessante?
 1\) Cite dois recursos do javascript para o tratamento de processamentos assíncronos e explique as diferenças entre eles.
 
 ```js
-// Promises e Async functions. Enquanto uma promise é executada o fluxo de execução não é afetado como acontece numa Async function que interrompe o fluxo de execução até a resolução de uma instrução de await.
+/* Promises e Async functions. Enquanto uma promise é executada o fluxo de execução não é afetado como acontece numa Async function que interrompe o fluxo de execução até a resolução de uma instrução de await.*/
 ```
 
 
@@ -231,7 +231,7 @@ Tem algum exemplo que você não acha interessante?
 ```
 
 ```js
-// Quase instantaneamente. Como as promises doSomethingElse() e doSomething() não influenciam no fluxo de execução do código, o segundo then() será executado quase instantaneamente independente do resultado da execução das promises do primeiro then().
+/* Quase instantaneamente. Como as promises doSomethingElse() e doSomething() não influenciam no fluxo de execução do código, o segundo then() será executado quase instantaneamente independente do resultado da execução das promises do primeiro then().*/
 ```
 
 
@@ -253,7 +253,7 @@ Tem algum exemplo que você não acha interessante?
 ```
 
 ```js
-// Vai imprimir o erro 'uh oh!'. As instruções abaixo da declaração throw não serão executadas e o controle será passado para o primeiro bloco catch que não está sendo explorado na promise.
+/* Vai imprimir o erro 'uh oh!'. As instruções abaixo da declaração throw não serão executadas e o controle será passado para o primeiro bloco catch que não está sendo explorado na promise.*/
 ```
 
 
@@ -446,13 +446,13 @@ Explique o porquê dos preços estarem com o mesmo valor. E o que precisa ser al
 1\) Cite tipos de componentes que existem no ReactJs e a melhor forma de utilização de cada um.
 
 ```js
-// Componentes do tipo Função e Classe. O componente de função recebe como argumento um único parâmetro imutável (props) e deve ser usado em operações que não necessitam manipulação de estado, como por exemplo, a renderização de dados. Para terefas mais avançadas, como consulta de dados, que necessitam do uso de métodos especiais, deve-se usar o componente Classe.
+/* Componentes do tipo Função e Classe. O componente de função recebe como argumento um único parâmetro imutável (props) e deve ser usado em operações que não necessitam manipulação de estado, como por exemplo, a renderização de dados. Para terefas mais avançadas, como consulta de dados, que necessitam do uso de métodos especiais, deve-se usar o componente Classe.*/
 ```
 
 2\) O que são e como funcionam os lifecycles no ReactJs? Cite um exemplo de uso de pelo menos um método lifecycle.
 
 ```js
-// São métodos especiais usados em componentes do tipo Classe para executar algum código quando um componente é criado ou destruído. O método componentDidMount(), por exemplo, é executado depois que a saída do componente é renderizada no DOM. Com ele podemos executar operações como setar no estado o resultado do consumo de um endpoint. Um outro exemplo seria usar o método componentWillUnmount() para derrubar valores setados pelo componentDidMount(). 
+/* São métodos especiais usados em componentes do tipo Classe para executar algum código quando um componente é criado ou destruído. O método componentDidMount(), por exemplo, é executado depois que a saída do componente é renderizada no DOM. Com ele podemos executar operações como setar no estado o resultado do consumo de um endpoint. Um outro exemplo seria usar o método componentWillUnmount() para derrubar valores setados pelo componentDidMount().*/
 ```
 
 3\) Atualmente nosso sistema possui um componente chamado Button que possui a seguinte estrutura:
@@ -498,7 +498,7 @@ O que você pode fazer para criar um botão que atenda essa demanda?
 
 
 ```js
-// Eu importaria o ícone do pacote @material-ui/icons como um componente Svg e colocaria os dois componentes (<ButtonLayout> e <IconeImportado>) dentro de uma <div> estilizada no método return().
+/* Eu importaria o ícone do pacote @material-ui/icons como um componente Svg e colocaria os dois componentes (<ButtonLayout> e <IconeImportado>) dentro de uma <div> estilizada no método return().*/
 ```
 
 
