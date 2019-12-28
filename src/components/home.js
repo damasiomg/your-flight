@@ -30,6 +30,7 @@ var theme = createMuiTheme({
     }
 })
 
+
 class Home extends React.Component {
 
     constructor(props){
@@ -39,6 +40,8 @@ class Home extends React.Component {
 
     render(){
         const { classes } = this.props
+        
+        
         return(
             <MuiThemeProvider theme={theme}>
                 

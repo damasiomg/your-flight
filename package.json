@@ -21,9 +21,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
-    "build": "webpack --mode=production",
-    "dev-old2": "webpack --mode=development -w",
-    "dev-old": "babel ./main.js -o ./bundle.js -w"
+    "build": "webpack --mode=production"
   },
   "dependencies": {
     "@material-ui/core": "^4.8.1",
