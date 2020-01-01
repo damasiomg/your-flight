@@ -4,7 +4,7 @@
 This is a web project built with React 16.x and Webpack 4.x.
 
 ## Live Demo:
-`https://naughty-lalande-ee772e.netlify.com`
+* https://naughty-lalande-ee772e.netlify.com
 
 ## Requirements:
 
