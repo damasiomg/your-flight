@@ -20,7 +20,7 @@ const styles = {
 
     divFlights: {
         height: 560,
-        overflow: 'scroll'
+        overflow: 'hidden'
     },
 
     nothing: {
